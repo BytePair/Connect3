@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:id="@+id/playfieldGrid"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/board"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/square_0_0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:onClick="dropIn"
+            android:padding="10dp"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/square_0_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:onClick="dropIn"
+            android:padding="10dp"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/square_0_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:onClick="dropIn"
+            android:padding="10dp"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/square_1_0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:onClick="dropIn"
+            android:padding="10dp"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/square_1_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:onClick="dropIn"
+            android:padding="10dp"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/square_1_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:onClick="dropIn"
+            android:padding="10dp"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/square_2_0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:onClick="dropIn"
+            android:padding="10dp"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/square_2_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:onClick="dropIn"
+            android:padding="10dp"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/square_2_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:onClick="dropIn"
+            android:padding="10dp"
+            android:tag="8" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="resetGameState"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playfieldGrid" />
+
+</android.support.constraint.ConstraintLayout>
